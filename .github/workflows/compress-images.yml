@@ -24,6 +24,8 @@ jobs:
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
+          # 🔥 IMPORTANT: Mode sense PR
+          compressOnly: true            
           # IMPORTANT: no tocar mai els RAW
           ignorePaths: "projects/**/raw/**"
 
